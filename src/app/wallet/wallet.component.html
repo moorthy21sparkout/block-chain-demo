@@ -1,0 +1,12 @@
+<div >
+    <button (click)="connect()">Connect Wallet</button>
+    <button (click)="disconnect()">Disconnect Wallet</button>
+  
+    <div *ngIf="provider$ ">
+      <p >Wallet connected</p>
+    </div> 
+    <div *ngIf="!(provider$)">
+      <p>Wallet not connected</p>
+    </div>
+  </div>
+  

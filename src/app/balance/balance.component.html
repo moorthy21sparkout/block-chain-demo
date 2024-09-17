@@ -1,0 +1,12 @@
+<h3>Check ERC-20 Token Balance</h3>
+
+<input [(ngModel)]="address" placeholder="Enter the ethereum Address" /><br><br>
+<button (click)="setDemoAddress()">Use Demo Address</button><br><br>
+<button (click)="getBalance()">Check the Balance</button><br><br>
+
+<div *ngIf="loading">loading....</div>
+
+<div *ngIf="balance && !loading">
+  <p>Balance:{{ balance }} token</p>
+</div>
+<div *ngIf="error">{{ error }}</div>

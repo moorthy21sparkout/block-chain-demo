@@ -1,0 +1,10 @@
+<div *ngIf="!address">
+    <button (click)="connectWallet()">Connect Wallet</button>
+  </div>
+  <div *ngIf="address">
+    <p>Connected Wallet: {{ address }}</p>
+    <button (click)="getBalanceWallet()">Get Balance</button>
+    <p *ngIf="balance">Balance: {{ balance }} ETH</p>
+    <button (click)="transferToken()">Transfer Tokens</button>
+    <button (click)="disconnectWallet()">Disconnect Wallet</button>
+  </div>

@@ -6,6 +6,12 @@ import Web3 from 'web3';
   providedIn: 'root'
 })
 export class ContractService {
+  transferTokens(arg0: string, arg1: string) {
+    throw new Error('Method not implemented.');
+  }
+  setSigner(arg0: any) {
+    throw new Error('Method not implemented.');
+  }
 
 
   private web3!: Web3;

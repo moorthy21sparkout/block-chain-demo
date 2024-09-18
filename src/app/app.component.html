@@ -1,3 +1,8 @@
-<h3 class="demo" [ngStyle]="{background: 'lightblue'}">Wallet Connection <br>
-    <app-balance></app-balance>
-<app-wallet></app-wallet></h3>
+<h3 class="demo" [ngStyle]="{ background: 'lightblue' }">
+  Wallet Connection <br />
+  <button routerLink="/home">Home</button>
+  <app-balance></app-balance>
+  <app-wallet></app-wallet>
+</h3>
+
+<router-outlet></router-outlet>
